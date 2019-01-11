@@ -1,0 +1,6 @@
+boto3==1.6.15
+pycrypto==2.6.1
+ecs-deploy==1.4.3
+awscli==1.14.59
+docker-compose==1.23.1
+pipenv==2018.10.13
