@@ -11,3 +11,4 @@ RUN chmod +x /usr/local/bin/ecs-cli
 RUN pip3 install --upgrade pip
 
 ADD requirements.txt /tmp/requirements.txt
+RUN pip3 install -r /tmp/requirements.txt
