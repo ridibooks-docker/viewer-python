@@ -1,7 +1,14 @@
 FROM docker:latest
 
 RUN apk update
-RUN apk add python3 make mariadb-dev python3-dev gcc musl-dev curl
+RUN apk add python3 \
+    make \
+    mariadb-dev \
+    python3-dev \
+    libffi-dev \
+    musl-dev \
+    gcc \
+    curl
 RUN rm -rf /var/cache/apk/*
 
 # install ecl-cli
