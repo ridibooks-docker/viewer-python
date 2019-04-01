@@ -6,7 +6,9 @@ RUN apt-get update && apt-get install -y \
     software-properties-common \
     curl \
     python3-distutils \
-    language-pack-ko
+    language-pack-ko \
+    gcc \
+    python3.6-dev
 
 ## Install pip3.6
 RUN curl -o /tmp/get-pip.py "https://bootstrap.pypa.io/get-pip.py"
