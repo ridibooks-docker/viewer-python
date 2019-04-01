@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     python3-distutils \
     language-pack-ko \
     gcc \
+    make \
     python3.6-dev
 
 ## Install pip3.6
