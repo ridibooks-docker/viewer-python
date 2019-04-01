@@ -20,3 +20,9 @@ RUN mkdir /var/log/library
 RUN touch /var/log/library/www.log
 
 WORKDIR /htdocs/www
+
+## Clean up
+RUN apt-get remove -y software-properties-common \
+    && apt-get clean \
+    && apt-get autoremove -y \
+    && rm -rf /var/lib/apt/lists/*
